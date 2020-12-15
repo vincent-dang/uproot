@@ -5,17 +5,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import logo from './logo.svg';
-import './App.css';
+import Test from './components/Test'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path = "/"> <Test/> </Route>
+      </Switch>
+    </Router>
   );
 }
-
-export default App;
